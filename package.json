@@ -1,0 +1,28 @@
+{
+  "name": "marsrover",
+  "version": "1.0.0",
+  "description": "NASA Mars Rover",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikegyi/marsrover.git"
+  },
+  "keywords": [
+    "mars",
+    "rover",
+    "twu"
+  ],
+  "author": "Mike Gyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikegyi/marsrover/issues"
+  },
+  "homepage": "https://github.com/mikegyi/marsrover#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
