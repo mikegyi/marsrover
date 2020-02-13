@@ -4,7 +4,7 @@
   "description": "NASA Mars Rover",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "jasmine run"
   },
   "repository": {
     "type": "git",
