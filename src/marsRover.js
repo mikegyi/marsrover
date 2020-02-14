@@ -1,4 +1,3 @@
-//Determine the logic behind the mars rover actions
 function applyAction(position, action) {
     if (action === 'M') {
         if (position.heading === 'N') {
@@ -34,27 +33,22 @@ function applyAction(position, action) {
     return position
  }
 
-
-//Loop over each individual action in the action sequence
  function applyActions(position, actions) {
     for(const action of actions) {
-        postion = applyAction(position, action)
+        position = applyAction(position, action)
         
     }
     return position
  }
 
- //Convert the received position object as a string
 function adaptPositionToString(position) {
     return position.x + ' ' + position.y + ' ' + position.heading
 }
 
-//Convert the received string to an object 
 function adaptStringToPosition(string) {
     return {x: string[0], y: string[2], heading: string[4]}
 }
 
-//Move each mars rover sequentially
  function marsRover(input) {
     const lines = input.split('\n')
     const positionFirstRover = adaptStringToPosition(lines[1])
@@ -68,7 +62,6 @@ function adaptStringToPosition(string) {
     return adaptPositionToString(finalFirstRover) + '\n' + adaptPositionToString(secondFirstRover)
  }
 
- //Export the functions so they are available in the test file
 module.exports = {
     applyAction,
     applyActions,

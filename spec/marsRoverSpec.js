@@ -1,7 +1,5 @@
-//import the marsRover js file to test logic
 var marsRover = require("../src/marsRover")
 
-//Test a singular action using the defined logic
 describe("applyAction", function() {
   let positionStart
     beforeEach(function() {
@@ -43,7 +41,6 @@ describe("applyAction", function() {
   });
 });
 
-//Test a sequence of actions 
 describe('applyActions', function() {
   it('can apply actions to mars rover', function() {
     const start = {
@@ -61,7 +58,6 @@ describe('applyActions', function() {
   })
 })
 
-//Test the desired input
 describe('marsRover', function() {
   it('can apply actions to mars rovers', function() {
     const result = marsRover.marsRover(
