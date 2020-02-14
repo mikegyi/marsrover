@@ -41,6 +41,23 @@ describe("applyAction", function() {
     });
   });
 
+  describe('applyActions', function() {
+    it('can apply actions to mars rover', function() {
+      const start = {
+        heading: 'N',
+        x: 0,
+        y: 0
+      }
+      const result = marsRover.applyActions(start, 'RM')  
+      const positionEnd = {
+        heading: 'E',
+        x: 1,
+        y: 0
+      }
+      expect(result).toEqual(positionEnd);
+    })
+  })
+
   describe('marsRover', function() {
     it('can apply actions to mars rovers', function() {
       const result = marsRover.marsRover(

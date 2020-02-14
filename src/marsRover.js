@@ -33,19 +33,37 @@ function applyAction(position, action) {
     return position
  }
 
+ function applyActions(position, actions) {
+    for(const action of actions) {
+        postion = applyAction(position, action)
+        
+    }
+    return position
+ }
+
+function adaptPositionToString(position) {
+    return position.x + ' ' + position.y + ' ' + position.heading
+}
+
+function adaptStringToPosition(string) {
+    return {x: string[0], y: string[2], heading: string[4]}
+}
+
  function marsRover(input) {
     const lines = input.split('\n')
-    const firstRover = {
-        position:lines[1],
-        action:lines[2]
-    }
-    const secondRover = {
-        position:lines[3],
-        action:lines[4]
-    }
+    const positionFirstRover = adaptStringToPosition(lines[1])
+    const actionsFirstRover = lines[2]
+    const positionSecondRover = adaptStringToPosition(lines[3])
+    const actionsSecondRover = lines[4]
+
+    const finalFirstRover = applyActions(positionFirstRover, actionsFirstRover)
+    const secondFirstRover = applyActions(positionSecondRover, actionsSecondRover)
+
+    return adaptPositionToString(finalFirstRover) + '\n' + adaptPositionToString(secondFirstRover)
  }
 
 module.exports = {
     applyAction,
+    applyActions,
     marsRover
 }
