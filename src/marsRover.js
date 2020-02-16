@@ -35,8 +35,7 @@ function applyAction(position, action) {
 
  function applyActions(position, actions) {
     for(const action of actions) {
-        position = applyAction(position, action)
-        
+        position = applyAction(position, action)    
     }
     return position
  }
