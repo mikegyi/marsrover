@@ -1,6 +1,6 @@
 # Mars Rover - ThoughtWorks Code Assignment
 
-A squad of robotic rovers have been landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, can be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
+A squad of robotic rovers have landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, can be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
 
 A rover’s position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
  
@@ -51,7 +51,7 @@ jasmine
 
 *Desired result*
 <br>
-<img src="/docs/desired-output.png" width=40%>
+<img src="https://github.com/mikegyi/marsrover/blob/master/docs/desired-result.png" width=40%>
 <br>
 
 ### My design 
